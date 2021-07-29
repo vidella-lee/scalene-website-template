@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-logo {
+    margin-right: 20px;
+  }
+
+  /* .full-width {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    overflow-x: hidden !important;
+  } */
+
+  .full-page-hero {
+    width: 100vw;
+    max-width: 100%;
+    height: 90vh;
+    /* position: absolute; */
+    /* z-index: -3; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    color: white;
+    /* border: 2px solid sienna; */
+    
+  }
+
+  .hero-triangle-container {
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    max-width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    /* border: 2px solid rebeccapurple; */
+  }
+
+.hero-triangle {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 50vh 0;
+  border-color: transparent #293e40 transparent transparent;
+  line-height: 0px;
+  _border-color: #000000 #293e40 #000000 #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+  }
+
+  .hero-overlay {
+    width: 100vw;
+    max-width: 100%;
+    height: 90vh;
+    position: absolute;
+    z-index: 1;
+    background: #424143;
+    opacity: 0.3;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    z-index: 3;
+    height: 100%;
+    width: 35%;
+    margin-left: 25px;
+    /* border: 2px solid red; */
+  }
+
+  .hero-text{
+    margin: 15px;
+  }
+
+  .hero-triangle-content-row {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    width: 100%;
+    /* max-width: 100%; */
+    height: 50vh;
+    justify-content: flex-end;
+    align-items: center;
+     
+    color: white;
+    /* border: 2px solid blueviolet; */
+  }
+
+  
+  .hero-triangle-content {
+    display: flex;
+    /* position: absolute; */
+    z-index: 5;
+    width: 50%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    margin-right: 25px; 
+    /* border: 2px solid springgreen; */
+  }
+
+  .hero-triangle-title {
+    width: 40%;
+  }
+
+  .hero-triangle-logo {
+    width: 50%;
+    margin-right: 90px;
+  }
+  
+  .triangle-banner {
+    height: 50vh;
+  }
+
+  .banner-triangle {
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 50vh 0;
+    border-color: transparent white transparent transparent;
+    line-height: 0px;
+    _border-color: #000000 white #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    }
+
+  .triangle-banner-content {
+    position: absolute;
+    z-index: 3;   
+    }
+
+  .large-feature-card-img {
+    width: 120px;
+    height: 120px;
+    /* border-radius: 50%; */
+    background: #293E40;
+    padding: 20px;
+  }
