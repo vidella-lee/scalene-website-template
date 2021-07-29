@@ -1,5 +1,5 @@
 import '../styles/App.css';
-import HeroTriangle from '../components/HeroTriangle';
+import TriangleHero from '../components/TriangleHero';
 import LargeFeatureCard from '../components/LargeFeatureCard';
 import logo from '../logo.svg'
 import heroImage from '../images/business-meeting-1.jpg';
@@ -12,7 +12,7 @@ function Home() {
   return (
     <div>
 
-      <HeroTriangle
+      <TriangleHero
        logo={<img src={logo} />}
        title="A Tagline for a Business Goes Here"
        heading="An H1 Title for a Home Page"

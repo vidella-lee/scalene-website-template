@@ -1,6 +1,4 @@
 import './styles/App.css';
-import Layout from './components/Layout';
-import HeroTriangle from './components/HeroTriangle';
 import Navbar from './components/Navbar';
 
 import About from './pages/about-us';

@@ -1,11 +1,11 @@
 import Layout from '../components/Layout';
-import HeroTriangle from '../components/HeroTriangle';
+import TriangleHero from '../components/TriangleHero';
 
 function Login() {
   return (
     
         <div style={{color: "red"}}>
-            <HeroTriangle />
+            <TriangleHero />
             <h1>Login</h1>
         </div>
     

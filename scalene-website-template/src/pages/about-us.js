@@ -1,11 +1,10 @@
-import Layout from '../components/Layout';
-import HeroTriangle from '../components/HeroTriangle';
+import TriangleHero from '../components/TriangleHero';
 
 function About() {
   return (
     
         <div style={{color: "red"}}>
-            <HeroTriangle
+            <TriangleHero
              title="About Us" />
             <h1>About BusinessName</h1>
         </div>
