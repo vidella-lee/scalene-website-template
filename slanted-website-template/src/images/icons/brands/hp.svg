@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="143" height="144" viewBox="0 0 143 144">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Ellipse_22" data-name="Ellipse 22" cx="71.5" cy="72" rx="71.5" ry="72" transform="translate(458.243 4694)" fill="#5f716d"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_9" data-name="Mask Group 9" transform="translate(-458.243 -4694)" clip-path="url(#clip-path)">
+    <g id="g3017" transform="translate(458.057 4694.478)">
+      <g id="g3061" transform="translate(0 0)">
+        <g id="g3021">
+          <path id="path3023" d="M-100.057-50.029A71.969,71.969,0,0,0-172.029-122q-1.626,0-3.235.077l-14.722,40.462h12.822c7.628,0,11.738,5.873,9.127,13.047l-18.159,49.9-15.247,0L-181.955-72H-193.42l-19.487,53.489h-15.253l22.913-62.948h0l13.783-37.881A72,72,0,0,0-244-50.029a72,72,0,0,0,55.263,70.017l13.356-36.7h.011l23.562-64.746h28.083c7.636,0,11.744,5.873,9.133,13.047l-15.956,43.831a9.922,9.922,0,0,1-8.668,6.07h-20.242L-174.166,21.91c.709.019,1.423.033,2.138.033a71.971,71.971,0,0,0,71.971-71.971" transform="translate(244 122)" fill="#5f716d"/>
+        </g>
+        <g id="g3025" transform="translate(88.012 49.959)">
+          <path id="path3027" d="M-19.121,0H-30.581L-46.63,44.033H-35.17L-19.121,0" transform="translate(46.63)" fill="#5f716d"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

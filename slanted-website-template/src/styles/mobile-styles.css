@@ -1,0 +1,37 @@
+/****************LARGER PHONES (MIN: 300px, MAX: 767px)**********************/
+
+@media only screen and (min-width: 300px) and (max-width:767px) {
+    .hero-content {
+      justify-content: flex-end;
+      align-self: flex-start;
+      height: 100%;
+      width: 65%;
+      margin-left: 25px;
+      }
+    
+    .hero-triangle {
+      border-width: 0 100vw 60vh 0;
+        }
+
+    .hero-triangle-content {
+      width: 70%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: 25px;
+      justify-content: space-around;
+      align-items: flex-end;
+  }
+
+  .hero-triangle-logo {
+    margin-right: 0px;
+    margin-bottom: 25px;
+  }
+  .hero-left-content-mobile {
+    height: 70vh;
+  }
+
+  .banner-right-content {
+    height: 50vh;
+    width: 50%;
+  }
+}
