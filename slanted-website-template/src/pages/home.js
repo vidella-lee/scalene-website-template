@@ -7,6 +7,7 @@ import SmallFeatureCard from "../components/SmallFeatureCard";
 import StatsFeatureCard from "../components/StatsFeatureCard";
 import TestimonialCard from "../components/TestimonialCard";
 import SlantedBanner from "../components/SlantedBanner";
+import CTABanner from "../components/CTABanner";
 import ClientsCarousel from "../components/ClientsCarousel";
 import OwlCarousel from 'react-owl-carousel';
 
@@ -23,6 +24,7 @@ import recommendIcon from "../images/icons/recommend-dark.svg";
 //OTHER IMAGES
 import logo from "../logo.svg"
 import heroImage from "../images/business-meeting-1.jpg";
+import handshake from "../images/handshake.jpg";
 
 import testimonialUsers from "../components/testimonialUsers";
 import { clientLogos } from "../components/clientLogos";
@@ -136,8 +138,7 @@ function Home() {
                addDelay={200}
                />
             </div>
-          </div>
-          <div className="row m-5">
+        
             <div className="col-sm-4 w-md-30 vw-sm-100 d-flex justify-content-center">
               <SmallFeatureCard
                image={visibilityIcon}
@@ -230,7 +231,14 @@ function Home() {
           </div>
         </div>
 {/***** END CLIENTS CAROUSEL *****/}
-
+      <div className="row">
+        <CTABanner
+         image={handshake}
+         title="Ready to get started?"
+         description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+         buttonCTA="Get Started"
+         />
+      </div>
       </div>
       
 </div>
