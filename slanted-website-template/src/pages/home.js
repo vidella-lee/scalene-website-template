@@ -199,10 +199,10 @@ function Home() {
 {/***** TESTIMONIALS CAROUSEL *****/}
         <div className="container-fluid bg-light mb-5 mt-5 w-100 d-flex flex-column justify-content-center align-items-center">
           <div className="row text-center p-3">
-            <h3>Testimonials</h3>
+            <h3 className="display-6"><b>Testimonials</b></h3>
           </div>
-          <div className="row w-100 justify-content-center align-items-center">
-            <div className="col">
+          <div className="row d-flex w-100 justify-content-center align-items-center">
+            <div className="col-10">
               <OwlCarousel className="owl-theme" loop autoplay margin={10} responsive={options.responsive}>              
               {testimonialUsers.map(testimonial => (
                 <div className="item">
