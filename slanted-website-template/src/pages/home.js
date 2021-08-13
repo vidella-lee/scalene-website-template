@@ -75,7 +75,7 @@ function Home() {
 
 {/***** KEY FEATURES SECTION *****/}
        <div className="container-fluid d-flex justify-content-center align-items-center p-5">
-         <div className="row d-flex justify-content-center align-items-center g-5">
+         <div className="row d-flex w-100 justify-content-center align-items-center g-5">
            <div className="d-flex col-lg-4 justify-content-center align-items-center">
              <LargeFeatureCard
               image={visibilityIcon}
