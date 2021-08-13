@@ -35,16 +35,16 @@ const ScaleneHero = ({title, heading, subheading, image, description, logo, butt
       </div>
       <div className="d-flex flex-column w-50 align-self-end justify-content-center text-light vh-80 p-3">
         <div
-         style={{display: `${logo ? "block" : "none"}`}}
-         className="mb-4 mt-3 align-self-end"
+         style={{display: `${logo ? "inline" : "none"}`}}
+         className="mb-4 mt-3 me-2 align-self-end d-none d-sm-inline"
         >
           {logo} 
         </div>
           <div
-           className="text-center text-sm-end w-60 align-self-end"
+           className="text-end w-60 align-self-end"
            style={{display: `${title ? "inline" : "none"}`}}
           >
-             <h1 className="display-6 me-md-4 " data-aos="fade-down" data-aos-delay="500">{title}</h1>
+             <h1 className="display-5 me-md-4 " data-aos="fade-down" data-aos-delay="500">{title}</h1>
            </div>
       </div>
     </div>

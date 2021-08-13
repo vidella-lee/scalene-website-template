@@ -222,9 +222,9 @@ function Home() {
 
 {/***** CLIENTS CAROUSEL *****/}
         <div className="container-fluid bg-white mb-5 mt-5">
-          <div className="row text-center p-3">
+          {/* <div className="row text-center p-3">
             <h3>Clients</h3>
-          </div>
+          </div> */}
           <div className="row">
             <ClientsCarousel clients={clientLogos} />
           </div>
