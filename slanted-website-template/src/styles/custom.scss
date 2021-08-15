@@ -6,9 +6,13 @@ $secondary: #5F716D;
 // $success: ;
 $info: #402F39;
 // $warning: ;
-// $danger: ;
+$danger: #900;
 $light: #D6D8C9;
 $dark: #73453E;
+
+//custom
+$light-faded: #F2F3EE;
+$secondary-faded: #B6BEBC;
 
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/utilities";
@@ -64,8 +68,28 @@ $utilities: map-merge(
         100: 100vh,
       )
     ),
+    "background-color": (
+      property: background-color,
+      class: bg,
+      values: map-merge(
+        $theme-colors,
+        (
+          "light-faded": $light-faded,
+          "secondary-faded": $secondary-faded,
+        )
+      )
+    ),
   )
+  
 );
+
+$custom-colors: (
+  "light-faded": $light-faded,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
 
 // $utilities: map-merge(
 //   $utilities,

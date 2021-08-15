@@ -160,7 +160,7 @@ code {
   .large-feature-card-img {
     width: 120px;
     height: 120px;
-    background: #293E40;
+    /* background: #293E40; */
     padding: 20px;
   }
 

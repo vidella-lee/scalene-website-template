@@ -197,8 +197,9 @@ function Home() {
                />
          </div>
         </div>
+
 {/***** TESTIMONIALS CAROUSEL *****/}
-        <div className="container-fluid bg-light mb-5 mt-5 w-100 d-flex flex-column justify-content-center align-items-center">
+        <div className="container-fluid bg-light-faded mb-5 mt-5 w-100 d-flex flex-column justify-content-center align-items-center">
           <div className="row text-center p-3">
             <h3 className="display-6"><b>Testimonials</b></h3>
           </div>
