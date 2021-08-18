@@ -4,11 +4,9 @@ const ScaleneHero = ({title, heading, subheading, image, description, logo, butt
   <div className="d-flex flex-column bg-primary vh-100 shadow">
     <div className="d-flex flex-row w-100 justify-content-between z-index-3">
       <div className="d-flex flex-row align-self-end justify-content-end align-items-end text-white hero-left-content-mobile h-100 w-50">
-        <div className="d-flex flex-column ">
+        <div className="d-flex flex-column" data-aos="fade-down" data-aos-delay="500">
             <h1 
              style={{display: `${heading ? "inline" : "none"}`}} 
-             data-aos="fade-down" 
-             data-aos-delay="500" 
              className="ms-3 ms-md-5">
           <b>{heading}</b>
         </h1>
@@ -37,6 +35,7 @@ const ScaleneHero = ({title, heading, subheading, image, description, logo, butt
         <div
          style={{display: `${logo ? "inline" : "none"}`}}
          className="mb-4 mt-3 me-2 align-self-end d-none d-sm-inline"
+         data-aos="fade-down" data-aos-delay="300"
         >
           {logo} 
         </div>

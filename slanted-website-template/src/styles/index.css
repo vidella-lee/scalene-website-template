@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -158,8 +160,8 @@ code {
   }
 
   .large-feature-card-img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     /* background: #293E40; */
     padding: 20px;
   }
@@ -169,6 +171,12 @@ code {
     height: 80px;
     background: #293E40;
     padding: 20px;
+  }
+
+  .mini-feature-card-img {
+    width: 60px;
+    height: 60px;
+    padding: 7px;
   }
 
   .stats-feature-card-img {
@@ -245,6 +253,12 @@ code {
   object-fit: cover;
   clip-path: polygon(45% 0, 100% 0, 100% 100%, 0% 100%);
   background: #293E40;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* .slant {

@@ -1,7 +1,5 @@
-import React from 'react';
-
 const SlantedBanner = ({image, title, description}) => (
-  <div className="container-fluid mb-5 mt-5 shadow-sm" data-aos="fade-down" data-aos-delay="500">
+  <div className="container-fluid mb-5 mt-5 shadow-sm" data-aos="fade-down" data-aos-delay="400">
     <div className="row">
       <div className="col-12 col-sm-7 p-0">
         <img className="slanted-banner-img" src={image} />

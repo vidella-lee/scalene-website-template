@@ -1,7 +1,7 @@
 import React from "react";
 
 const TestimonialCard = ({quote, name, image, addDelay}) => (
-    <div className="d-flex card bg-transparent text-center justify-content-center align-items-center p-5 rounded-3 border-0" data-aos="fade-down" data-aos-delay={400 + addDelay} style={{width: "20rem"}}>     
+    <div className="d-flex card bg-transparent text-center justify-content-center align-items-center p-5 rounded-3 border-0" style={{width: "20rem"}}>     
       <div className="card-body">
         <blockquote class="blockquote mb-5">
           <p className="card-title">"{quote}"</p>

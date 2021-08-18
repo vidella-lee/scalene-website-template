@@ -68,7 +68,7 @@ function Home() {
               <h1 className="m-5"><b>Describe Your Service</b></h1>
             </div>
             
-              <p className="mb-5">
+              <p className="mb-5 text-center">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.
               </p>
@@ -113,8 +113,8 @@ function Home() {
 
 {/***** FEATURES SECTION *****/}
         <div className="container-fluid">
-          <div className="row d-flex justify-content-evenly gx-5 m-5">
-            <div className="col-sm-4 w-md-30 vw-sm-100 d-flex justify-content-center">
+          <div className="row d-flex justify-content-evenly g-5 m-5">
+            <div className="col-md-4 w-md-30 vw-sm-100 d-flex justify-content-center">
               <SmallFeatureCard
                image={accountSettingsIcon}
                title="Feature"
@@ -122,7 +122,7 @@ function Home() {
                addDelay={200}
                />
             </div>
-            <div className="col-sm-4 w-md-30 vw-sm-100 d-flex justify-content-center">
+            <div className="col-md-4 w-md-30 vw-sm-100 d-flex justify-content-center">
               <SmallFeatureCard
                image={bookmarkIcon}
                title="Feature"
@@ -130,7 +130,7 @@ function Home() {
                addDelay={200}
                />
             </div>
-            <div className="col-sm-4 w-md-30 vw-sm-100 d-flex justify-content-center">
+            <div className="col-md-4 w-md-30 vw-sm-100 d-flex justify-content-center">
               <SmallFeatureCard
                image={lockIcon}
                title="Feature"
@@ -139,7 +139,7 @@ function Home() {
                />
             </div>
         
-            <div className="col-sm-4 w-md-30 vw-sm-100 d-flex justify-content-center">
+            <div className="col-md-4 w-md-30 vw-sm-100 d-flex justify-content-center">
               <SmallFeatureCard
                image={visibilityIcon}
                title="Feature"
@@ -147,7 +147,7 @@ function Home() {
                addDelay={200}
                />
             </div>
-            <div className="col-sm-4 w-md-30 vw-sm-100 d-flex justify-content-center">
+            <div className="col-md-4 w-md-30 vw-sm-100 d-flex justify-content-center">
               <SmallFeatureCard
                image={accountSettingsIcon}
                title="Feature"
@@ -155,7 +155,7 @@ function Home() {
                addDelay={200}
                />
             </div>
-            <div className="col-sm-4 w-md-30 vw-sm-100 d-flex justify-content-center">
+            <div className="col-md-4 w-md-30 vw-sm-100 d-flex justify-content-center">
               <SmallFeatureCard
                image={dashbooardIcon}
                title="Feature"
@@ -199,7 +199,7 @@ function Home() {
         </div>
 
 {/***** TESTIMONIALS CAROUSEL *****/}
-        <div className="container-fluid bg-light-faded mb-5 mt-5 w-100 d-flex flex-column justify-content-center align-items-center">
+        <div className="container-fluid bg-light-faded mb-5 mt-5 w-100 d-flex flex-column justify-content-center align-items-center" data-aos="fade-down" data-aos-delay="500">
           <div className="row text-center p-3">
             <h3 className="display-6"><b>Testimonials</b></h3>
           </div>

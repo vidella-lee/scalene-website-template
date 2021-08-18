@@ -1,5 +1,7 @@
 import './styles/App.css';
+
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import About from './pages/about-us';
 import Home from './pages/home';
@@ -36,6 +38,7 @@ function App() {
           <Login />
         </Route>
       </Switch>
+      <Footer />
       </div>     
     </Router>
 
