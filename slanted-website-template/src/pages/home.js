@@ -1,7 +1,7 @@
 import "../styles/App.css";
 
 //COMPONENTS
-import ScaleneHero from "../components/ScaleneHero";
+import TriangleHero from "../components/TriangleHero";
 import LargeFeatureCard from "../components/LargeFeatureCard";
 import SmallFeatureCard from "../components/SmallFeatureCard";
 import StatsFeatureCard from "../components/StatsFeatureCard";
@@ -52,7 +52,7 @@ function Home() {
   
   return (
     <div className="w-100 justify-content-center">
-      <ScaleneHero
+      <TriangleHero
        image={heroImage}
        logo={<img src={logo} />}
        title="A Tagline for a Business Goes Here"

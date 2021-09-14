@@ -1,10 +1,10 @@
 import React from "react";
 
-const ScaleneHero = ({title, heading, subheading, image, description, logo, buttonLabel}) => (
-  <div className="d-flex flex-column bg-primary vh-100 shadow">
+const RightTriangleHero = ({title, heading, subheading, image, description, logo, buttonLabel}) => (
+  <div className="d-flex flex-column bg-white vh-100">
     <div className="d-flex flex-row w-100 justify-content-between z-index-3">
-      <div className="d-flex flex-row align-self-end justify-content-end align-items-end text-white hero-left-content-mobile h-100 w-50">
-        <div className="d-flex flex-column" data-aos="fade-down" data-aos-delay="500">
+      <div className="d-flex flex-row align-self-end justify-content-end align-items-end text-primary hero-left-content-mobile vh-80 w-100 pe-sm-5 me-sm-5">
+        <div className="d-flex flex-column ps-2 ps-sm-0 w-100 text-break" data-aos="fade-down" data-aos-delay="500">
             <h1 
              style={{display: `${heading ? "inline" : "none"}`}} 
              className="ms-3 ms-md-5">
@@ -28,31 +28,31 @@ const ScaleneHero = ({title, heading, subheading, image, description, logo, butt
             {buttonLabel}
           </button>
         </div>
-        </div>
+      </div>
         
       </div>
-      <div className="d-flex flex-column w-50 align-self-end justify-content-center text-light vh-80 p-3">
+      <div className="d-flex w-50 flex-column flex-sm-row align-self-start align-self-sm-center justify-content-end align-items-center text-white pt-5">
         <div
          style={{display: `${logo ? "inline" : "none"}`}}
-         className="mb-4 mt-3 me-2 align-self-end d-none d-sm-inline"
+         className="mb-4 mt-3 me-2"
          data-aos="fade-down" data-aos-delay="300"
         >
-          {logo} 
+          <img className="logo" src={logo} alt="example logo" />
         </div>
           <div
-           className="text-end w-60 align-self-end"
+           className="align-self-center text-center ms-0 ms-sm-5 pe-2 pe-sm-0"
            style={{display: `${title ? "inline" : "none"}`}}
           >
-             <h1 className="display-5 me-md-4 " data-aos="fade-down" data-aos-delay="500">{title}</h1>
+             <h1 className="me-md-4 display-1 " data-aos="fade-down" data-aos-delay="500">{title}</h1>
            </div>
       </div>
     </div>
     <div className="d-flex flex-row w-100 z-index-2">
-        <div className="overlay"></div>
+        <div className="right-overlay"></div>
     
     </div>
-    <img src={image} className="scalene-hero-img"/>
+    <img src={image} className="right-triangle-hero-img"/>
   </div>
 
 )
-export default ScaleneHero;
+export default RightTriangleHero;

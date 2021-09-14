@@ -43,6 +43,7 @@ $utilities: map-merge(
       property: height,
       class: h,
       values: (
+        10: 10%,
         25: 25%,
         30: 30%,
         40: 40%,
@@ -59,6 +60,7 @@ $utilities: map-merge(
       property: height,
       class: vh,
       values: (
+        10: 10vh,
         25: 25vh,
         50: 50vh,
         60: 60vh,
@@ -67,6 +69,18 @@ $utilities: map-merge(
         90: 90vh,
         100: 100vh,
       )
+    ),
+    "min-viewport-height": (
+      property: min-height,
+      class: min-vh,
+      values: (
+        50: 50vh,
+        60: 60vh,
+        70: 70vh,
+        80: 80vh,
+        90: 90vh,
+        100: 100vh
+        )
     ),
     "background-color": (
       property: background-color,

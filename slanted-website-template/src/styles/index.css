@@ -14,6 +14,10 @@ code {
     monospace;
 }
 
+.logo {
+  height: 100px;
+}
+
 .nav-logo {
     margin-right: 20px;
   }
@@ -26,43 +30,21 @@ code {
     overflow-x: hidden !important;
   } */
 
-  .full-page-hero {
-    width: 100vw;
-    max-width: 100%;
-    height: 90vh;
-    /* position: absolute; */
-    /* z-index: -3; */
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    color: white;
-    /* border: 2px solid sienna; */
+.full-page-hero {
+  width: 100vw;
+  max-width: 100%;
+  height: 90vh;
+  /* position: absolute; */
+  /* z-index: -3; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  color: white;
+  /* border: 2px solid sienna; */
     
-  }
+}
 
-  .hero-triangle-container {
-    position: absolute;
-    z-index: 2;
-    width: 100vw;
-    max-width: 100%;
-    height: 90vh;
-    overflow: hidden;
-    /* border: 2px solid rebeccapurple; */
-  }
-
-.hero-triangle {
-  position: absolute;
-  z-index: 2;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 100vw 55vh 0;
-  border-color: transparent #293e40 transparent transparent;
-  line-height: 0px;
-  _border-color: #000000 #293e40 #000000 #000000;
-  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
-  }
-
+  
   .hero-overlay {
     width: 100vw;
     max-width: 100%;
@@ -103,19 +85,6 @@ code {
     /* border: 2px solid blueviolet; */
   }
 
-  
-.hero-triangle-content {
-    display: flex;
-    /* position: absolute; */
-    z-index: 5;
-    width: 50%;
-    height: auto;
-    justify-content: space-between;
-    align-items: center;
-    text-align: right;
-    margin-right: 25px; 
-    /* border: 2px solid springgreen; */
-}
 
 .hero-triangle-title {
     width: 40%;
@@ -207,21 +176,54 @@ code {
     border: 2px solid royalblue;
   }
 
-  .scalene-hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* clip-path: polygon(0 0, 0% 85%, 100% 100%); */
-    clip-path: polygon(0 0, 35% 0, 100% 100%, 0 100%);
-    background-attachment: fixed;
-  }
+.scalene-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 35% 0, 100% 100%, 0 100%);
+  /* clip-path: polygon(0 0, 0% 85%, 100% 100%); */
+  background-attachment: fixed;
+}
+
+.right-triangle-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
 
   .scalene-logo {
     width: 50px;
     height: 50px;;
   }
 
-.overlay {
+/* .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  clip-path: polygon(0 0, 0% 85%, 100% 100%);
+  z-index: 2;
+} */
+
+.right-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  z-index: 2;
+}
+
+.left-overlay {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -232,8 +234,36 @@ code {
   background-color: rgba(0,0,0,0.3);
   /* clip-path: polygon(0 0, 0% 85%, 100% 100%); */
   clip-path: polygon(0 0, 35% 0, 100% 100%, 0 100%);
+  /* clip-path: polygon(0 0, 0% 85%, 100% 100%); */
   z-index: 2;
 }
+
+.full-overlay {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.small-scalene-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 35% 0, 100% 100%, 0 100%);
+}
+
+  .small-hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 75vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    clip-path: polygon(0 0, 35% 0, 100% 100%, 0 100%);
+    z-index: 2;
+  }
 
 .slanted-banner-img {
   width: 100%;
@@ -284,6 +314,10 @@ code {
     position: absolute;
     z-index: 3;
   }
+
+input::placeholder {
+  overflow: visible;
+}
 
   /* .owl-dots {
     background: #293e40 !important;

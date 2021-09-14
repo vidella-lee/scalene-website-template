@@ -1,6 +1,6 @@
 
 //COMPONENTS
-import ScaleneHero from '../components/ScaleneHero';
+import RightTriangleHero from '../components/RightTriangleHero';
 import ImageBottomCard from '../components/ImageBottomCard.js';
 import TeamMemberCard from '../components/TeamMemberCard';
 import CTABanner from "../components/CTABanner";
@@ -15,23 +15,23 @@ import recommendIcon from "../images/icons/recommend-secondary.svg";
 //OTHER IMAGES
 import heroImage from '../images/business-meeting-1.jpg';
 import handshake from "../images/handshake.jpg";
-import logo from "../logo.svg"
+import logo from "../logo.svg";
 
 
 function About() {
   return (
     <div>
-      <ScaleneHero
+      <RightTriangleHero
        image={heroImage}
        title="About Us"
-       logo={<img src={logo} />}
+       logo={logo}
        heading="Mission Statement"
        description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
         />
         <div className="container-fluid d-flex flex-column">
           
 {/***** VALUES SECTION *****/}          
-         <div className="row align-items-center justify-content-center" data-aos="fade-down" data-aos-delay="500">
+         <div className="row align-items-center justify-content-center bg-light-faded" data-aos="fade-down" data-aos-delay="500">
           <div className="col-lg-7">
             <div className="text-center">
               <h1 className="m-5"><b>Our Values</b></h1>
@@ -90,7 +90,7 @@ function About() {
            <div className="text-center">
               <h1 className="m-5"><b>Meet the Team</b></h1>
             </div>
-            <div className="row">
+            <div className="row gx-5 gy-4 gy-md-0">
               {teamMembers.map(teamMember => (
                 <div className="col-md-4 col-lg-3 d-flex justify-content-center align-items-center">
                 <TeamMemberCard

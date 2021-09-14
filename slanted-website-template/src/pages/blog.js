@@ -1,10 +1,10 @@
-import ScaleneHero from '../components/ScaleneHero';
+import TriangleHero from '../components/TriangleHero';
 
 function Blog() {
   return (
     
         <div style={{color: "red"}}>
-            <ScaleneHero />
+            <TriangleHero />
             <h1>Blog</h1>
         </div>
     

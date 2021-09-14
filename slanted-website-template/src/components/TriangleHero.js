@@ -1,10 +1,10 @@
 import React from "react";
 
-const SmallScaleneHero = ({title, heading, subheading, image, description, logo, buttonLabel}) => (
-  <div className="d-flex flex-column bg-primary vh-75 shadow">
+const TraingleHero = ({title, heading, subheading, image, description, logo, buttonLabel}) => (
+  <div className="d-flex flex-column bg-primary vh-100 shadow">
     <div className="d-flex flex-row w-100 justify-content-between z-index-3">
-      <div className="d-flex flex-row align-self-center justify-content-center align-items-end text-white hero-left-content-mobile vh-75 w-50 testing-border">
-        <div className="d-flex flex-column justify-content-center testing-border2" data-aos="fade-down" data-aos-delay="500">
+      <div className="d-flex flex-row align-self-end justify-content-end align-items-end text-white hero-left-content-mobile h-100 w-50">
+        <div className="d-flex flex-column ps-2 ps-sm-0 w-100" data-aos="fade-down" data-aos-delay="500">
             <h1 
              style={{display: `${heading ? "inline" : "none"}`}} 
              className="ms-3 ms-md-5">
@@ -31,7 +31,7 @@ const SmallScaleneHero = ({title, heading, subheading, image, description, logo,
         </div>
         
       </div>
-      <div className="d-flex flex-column w-50 align-self-end justify-content-start text-light vh-75 p-3 testing-border2">
+      <div className="d-flex flex-column w-50 align-self-end justify-content-center text-light vh-80 p-3">
         <div
          style={{display: `${logo ? "inline" : "none"}`}}
          className="mb-4 mt-3 me-2 align-self-end d-none d-sm-inline"
@@ -40,7 +40,7 @@ const SmallScaleneHero = ({title, heading, subheading, image, description, logo,
           {logo} 
         </div>
           <div
-           className="text-end mt-5 w-60 align-self-end testing-border"
+           className="text-end w-60 align-self-end pe-2 pe-sm-0"
            style={{display: `${title ? "inline" : "none"}`}}
           >
              <h1 className="display-5 me-md-4 " data-aos="fade-down" data-aos-delay="500">{title}</h1>
@@ -48,11 +48,11 @@ const SmallScaleneHero = ({title, heading, subheading, image, description, logo,
       </div>
     </div>
     <div className="d-flex flex-row w-100 z-index-2">
-        <div className="small-hero-overlay"></div>
+        <div className="left-overlay"></div>
     
     </div>
-    <img src={image} className="small-scalene-hero-img"/>
+    <img src={image} className="scalene-hero-img"/>
   </div>
 
 )
-export default SmallScaleneHero;
+export default TraingleHero;
