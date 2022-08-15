@@ -5,10 +5,10 @@ import BlogNavbar from "../components/BlogNavbar";
 import OwlCarousel from "react-owl-carousel";
 
 // IMAGES
-import heroImage from "../images/business-meeting-1.JPG";
-import post1 from "../images/blog-post-1.JPG";
-import post2 from "../images/blog-post-2.JPG";
-import post3 from "../images/blog-post-3.JPG";
+import heroImage from "../images/business-meeting-1.jpg";
+import post1 from "../images/blog-post-1.jpg";
+import post2 from "../images/blog-post-2.jpg";
+import post3 from "../images/blog-post-3.jpg";
 import logo from "../logo.svg";
 
 const options = {
