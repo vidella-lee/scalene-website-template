@@ -12,7 +12,7 @@ function Pricing() {
         image={heroImage}
         title="Pricing"
         logo={logo}
-        heading="Get Started With BusinessName's Product"
+        heading="Get Started With This Product"
         description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
       />
       <div className="container-fluid d-flex flex-column align-items-center">
