@@ -1,7 +1,5 @@
-import "../styles/App.css";
-
 //COMPONENTS
-import TriangleHero from "../components/TriangleHero";
+import SplitHero from "../components/SplitHero/SplitHero";
 import LargeFeatureCard from "../components/LargeFeatureCard";
 import SmallFeatureCard from "../components/SmallFeatureCard";
 import StatsFeatureCard from "../components/StatsFeatureCard";
@@ -14,7 +12,7 @@ import OwlCarousel from "react-owl-carousel";
 //MATERIAL ICONS (FROM https://fonts.google.com/icons)
 import visibilityIcon from "../images/icons/visibility-light.svg";
 import bookmarkIcon from "../images/icons/bookmark-light.svg";
-import dashbooardIcon from "../images/icons/dashboard-light.svg";
+import dashboardIcon from "../images/icons/dashboard-light.svg";
 import lockIcon from "../images/icons/lock-light.svg";
 import accountSettingsIcon from "../images/icons/account-settings-light.svg";
 import groupsIcon from "../images/icons/groups-dark.svg";
@@ -49,17 +47,21 @@ const options = {
 
 function Home() {
   return (
-    <div className="w-100 justify-content-center">
-      <TriangleHero
-        image={heroImage}
-        logo={<img src={logo} alt="a generic logo for a generic company" />}
-        title="A Tagline for a Business Goes Here"
+    <div className="w-100 justify-content-center bg-white">
+      <SplitHero
+        image={'/static/business-meeting-1.jpg'}
+        //logo={<img src={logo} alt="a generic logo for a generic company" />}
+        logo={{
+          src: "/static/logo.svg",
+          alt: "a generic logo for a generic company"
+        }}
+        title="A Great and Catchy Tagline Goes Here"
         heading="An H1 Title for a Home Page"
-        //subheading="An H2 Subheading"
+        subheading="An H2 Subheading"
         description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
         buttonLabel="Get Started"
       />
-      <div className="container-fluid">
+      <div className="container-fluid mt-5">
         <div
           className="row align-items-center justify-content-center"
           data-aos="fade-down"
@@ -101,7 +103,7 @@ function Home() {
             </div>
             <div className="d-flex col-lg-4 justify-content-center align-items-center">
               <LargeFeatureCard
-                image={dashbooardIcon}
+                image={dashboardIcon}
                 title="A Key Aspect"
                 description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
                 addDelay={300}
@@ -163,7 +165,7 @@ function Home() {
             </div>
             <div className="col-md-4 w-md-30 vw-sm-100 d-flex justify-content-center">
               <SmallFeatureCard
-                image={dashbooardIcon}
+                image={dashboardIcon}
                 title="Feature"
                 description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
                 addDelay={200}
@@ -198,12 +200,14 @@ function Home() {
           data-aos="fade-down"
           data-aos-delay="500"
         >
-          <div className="col-5 h-100 w-50 d-flex justify-content-center">
+          <div className="col-5 h-100 w-50 d-flex justify-content-center bg-secondary">
             <StatsFeatureCard
               image={groupsIcon}
               header="240,000"
               description="happy customers"
               addDelay={200}
+              textColor="text-white"
+              SVGIconColor="text-secondary"
             />
           </div>
           <div className="col-5 h-100 w-50 d-flex justify-content-center">
@@ -212,6 +216,7 @@ function Home() {
               header="98%"
               description="approval rate"
               addDelay={200}
+              textColor="text-white"
             />
           </div>
         </div>
