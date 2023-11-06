@@ -1,6 +1,6 @@
 const LoginCard = () => (
   <div
-    className="d-flex card bg-light text-center justify-content-center align-items-center p-2 p-lg-5 rounded-3 border-0 shadow-lg z-index-3"
+    className="d-flex card bg-white opacity-75 text-center justify-content-center align-items-center p-2 p-lg-5 rounded-3 border-0 shadow-lg"
     id="login-card"
     data-aos="fade-down"
     data-aos-delay={400}
@@ -16,7 +16,7 @@ const LoginCard = () => (
           </label>
           <input
             type="email"
-            className="form-control border-top-0 border-end-0 border-start-0 bg-transparent w-auto"
+            className="form-control border-top-0 border-end-0 border-start-0 bg-transparent"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             placeholder="Email address or username"
@@ -40,7 +40,7 @@ const LoginCard = () => (
         <i className="bi bi-facebook m-3 fs-3"></i>
       </div>
       <div class="d-grid gap-2 d-md-block">
-        <button type="button" className="btn btn-info btn-md mt-4 mb-4 shadow">
+        <button type="button" className="btn btn-info btn-lg mt-4 mb-4 shadow">
           Sign In
         </button>
       </div>

@@ -1,5 +1,3 @@
-import './styles/App.css';
-
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -19,27 +17,27 @@ function App() {
   return (
     <Router>
       <div className="w-100 justify-content-center">
-      <Navbar />
+        <Navbar />
 
-      <Switch>
-      <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/about-us">
-          <About />
-        </Route>
-        <Route path="/blog">
-          <Blog />
-        </Route>
-        <Route path="/pricing">
-          <Pricing />
-        </Route>
-        <Route path="/login">
-          <Login />
-        </Route>
-      </Switch>
-      <Footer />
-      </div>     
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about-us">
+            <About />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+          <Route path="/pricing">
+            <Pricing />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
     </Router>
 
   );

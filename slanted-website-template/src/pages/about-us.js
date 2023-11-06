@@ -1,5 +1,6 @@
 //COMPONENTS
-import RightTriangleHero from "../components/RightTriangleHero";
+import SplitHero from "../components/SplitBoxHero/SplitBoxHero";
+import SplitBanner from "../components/SplitBanner";
 import ImageBottomCard from "../components/ImageBottomCard.js";
 import TeamMemberCard from "../components/TeamMemberCard";
 import CTABanner from "../components/CTABanner";
@@ -12,43 +13,48 @@ import volunteerIcon from "../images/icons/volunteer-activism-secondary.svg";
 import recommendIcon from "../images/icons/recommend-secondary.svg";
 
 //OTHER IMAGES
-import heroImage from "../images/business-meeting-1.jpg";
-import handshake from "../images/handshake.jpg";
-import logo from "../logo.svg";
+import heroImage from "../images/AdobeStock_477547119.jpeg";
+import bannerImage from "../images/pexels-david-skyrius.jpg"
+import bannerImage2 from "../images/AdobeStock_334979404.jpeg"
 
 function About() {
   return (
     <div>
-      <RightTriangleHero
-        image={heroImage}
-        title="About Us"
-        logo={logo}
-        heading="Mission Statement"
-        description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+      <SplitHero
+        logo={{
+          src: "/static/logo.svg",
+          alt: "a generic logo for a generic company"
+        }}
+        heading="About Us"
+        titleColor="text-white"
+        title="Mission Statement"
+        subheading="A Great and Catchy Tagline Goes Here"
+        paragraph2="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        leftBgImg={{
+          src: heroImage,
+          title: 'background image'
+        }}
+        reverse={false}
       />
-      <div className="container-fluid d-flex flex-column">
+      <div className="container-fluid d-flex flex-column p-0">
         {/***** VALUES SECTION *****/}
         <div
-          className="row align-items-center justify-content-center bg-light-faded"
+          className="d-flex vh-100 p-0"
           data-aos="fade-down"
           data-aos-delay="500"
         >
-          <div className="col-lg-7">
-            <div className="text-center">
-              <h1 className="m-5">
-                <b>Our Values</b>
-              </h1>
-            </div>
-            <p className="mb-5 text-center">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd.
-            </p>
-          </div>
+          <SplitBanner
+            image={bannerImage}
+            title="Our Values"
+            bgColor="bg-light-faded"
+            paragraphColor="text-info"
+            titleColor="text-primary"
+            paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          />
         </div>
+        {/* </div> */}
         <div
-          className="row d-flex justify-content-center align-items-center bg-secondary text-white h-50 shadow mt-5 mb-5 p-5 g-4"
+          className="row d-flex justify-content-center align-items-center bg-secondary text-white h-50 shadow mb-5 p-5 g-4"
           data-aos="fade-down"
           data-aos-delay="500"
         >
@@ -119,7 +125,7 @@ function About() {
         </div>
         <div className="row">
           <CTABanner
-            image={handshake}
+            image={bannerImage2}
             title="Want to know more? Get in touch."
             description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
             buttonCTA="Contact us"

@@ -1,12 +1,10 @@
-import "../styles/App.css";
-
 //COMPONENTS
-import TriangleHero from "../components/TriangleHero";
+import SplitHero from "../components/SplitBoxHero/SplitBoxHero";
 import LargeFeatureCard from "../components/LargeFeatureCard";
 import SmallFeatureCard from "../components/SmallFeatureCard";
 import StatsFeatureCard from "../components/StatsFeatureCard";
 import TestimonialCard from "../components/TestimonialCard";
-import SlantedBanner from "../components/SlantedBanner";
+import SplitBanner from "../components/SplitBanner";
 import CTABanner from "../components/CTABanner";
 import ClientsCarousel from "../components/ClientsCarousel";
 import OwlCarousel from "react-owl-carousel";
@@ -14,14 +12,13 @@ import OwlCarousel from "react-owl-carousel";
 //MATERIAL ICONS (FROM https://fonts.google.com/icons)
 import visibilityIcon from "../images/icons/visibility-light.svg";
 import bookmarkIcon from "../images/icons/bookmark-light.svg";
-import dashbooardIcon from "../images/icons/dashboard-light.svg";
+import dashboardIcon from "../images/icons/dashboard-light.svg";
 import lockIcon from "../images/icons/lock-light.svg";
 import accountSettingsIcon from "../images/icons/account-settings-light.svg";
 import groupsIcon from "../images/icons/groups-dark.svg";
 import recommendIcon from "../images/icons/recommend-dark.svg";
 
 //OTHER IMAGES
-import logo from "../logo.svg";
 import heroImage from "../images/business-meeting-1.jpg";
 import handshake from "../images/handshake.jpg";
 
@@ -49,17 +46,28 @@ const options = {
 
 function Home() {
   return (
-    <div className="w-100 justify-content-center">
-      <TriangleHero
-        image={heroImage}
-        logo={<img src={logo} alt="a generic logo for a generic company" />}
-        title="A Tagline for a Business Goes Here"
+    <div className="w-100 justify-content-center bg-white">
+      <SplitHero
+        image={'/static/pexels-kaique-rocha.jpg'}
+        logo={{
+          src: "/static/logo.svg",
+          alt: "a generic logo for a generic company"
+        }}
+        title="Split Template"
+        titleColor="text-white"
         heading="An H1 Title for a Home Page"
-        //subheading="An H2 Subheading"
-        description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        subheading="A Great and Catchy Tagline Goes Here"
+        paragraph1="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        paragraph2="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
         buttonLabel="Get Started"
+        leftBgImg={{
+          src: '/static/pexels-kaique-rocha.jpg',
+          title: 'background image'
+        }}
+        reverse={false}
+        reverseContent={false}
       />
-      <div className="container-fluid">
+      <div className="container-fluid mt-5">
         <div
           className="row align-items-center justify-content-center"
           data-aos="fade-down"
@@ -88,6 +96,8 @@ function Home() {
               <LargeFeatureCard
                 image={visibilityIcon}
                 title="A Key Aspect"
+                //bgColor="bg-info"
+                //textColor="text-white"
                 description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
               />
             </div>
@@ -101,7 +111,7 @@ function Home() {
             </div>
             <div className="d-flex col-lg-4 justify-content-center align-items-center">
               <LargeFeatureCard
-                image={dashbooardIcon}
+                image={dashboardIcon}
                 title="A Key Aspect"
                 description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
                 addDelay={300}
@@ -110,12 +120,19 @@ function Home() {
           </div>
         </div>
         {/***** END KEY FEATURES SECTION *****/}
+        <div
+          className="d-flex my-5"
+        >
+          <SplitBanner
+            image={heroImage}
+            title="A Key Aspect"
+            bgColor="bg-primary"
+            paragraphColor="text-info"
+            titleColor="text-white"
+            paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+          />
+        </div>
 
-        <SlantedBanner
-          image={heroImage}
-          title="A Key Aspect"
-          description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-        />
 
         {/***** FEATURES SECTION *****/}
         <div className="container-fluid">
@@ -163,7 +180,7 @@ function Home() {
             </div>
             <div className="col-md-4 w-md-30 vw-sm-100 d-flex justify-content-center">
               <SmallFeatureCard
-                image={dashbooardIcon}
+                image={dashboardIcon}
                 title="Feature"
                 description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
                 addDelay={200}
@@ -194,40 +211,43 @@ function Home() {
           </div>
         </div>
         <div
-          className="row justify-content-center bg-dark text-light h-50 shadow mt-5 mb-5"
+          className="row justify-content-center text-light h-50 shadow my-5"
           data-aos="fade-down"
           data-aos-delay="500"
         >
-          <div className="col-5 h-100 w-50 d-flex justify-content-center">
+          <div className="col-5 h-100 w-50 d-flex justify-content-center bg-secondary">
             <StatsFeatureCard
               image={groupsIcon}
               header="240,000"
               description="happy customers"
               addDelay={200}
+              textColor="text-white"
+              SVGIconColor="text-secondary"
             />
           </div>
-          <div className="col-5 h-100 w-50 d-flex justify-content-center">
+          <div className="col-5 h-100 w-50 d-flex justify-content-center bg-primary">
             <StatsFeatureCard
               image={recommendIcon}
               header="98%"
               description="approval rate"
               addDelay={200}
+              textColor="text-white"
             />
           </div>
         </div>
 
         {/***** TESTIMONIALS CAROUSEL *****/}
         <div
-          className="container-fluid bg-light-faded mb-5 mt-5 w-100 d-flex flex-column justify-content-center align-items-center"
+          className="container-fluid w-100 d-flex flex-column justify-content-center align-items-center bg-light-faded my-5"
           data-aos="fade-down"
           data-aos-delay="500"
         >
-          <div className="row text-center p-3">
+          <div className="row text-center p-3 my-5">
             <h3 className="display-6">
               <b>Testimonials</b>
             </h3>
           </div>
-          <div className="row d-flex w-100 justify-content-center align-items-center">
+          <div className="row d-flex w-100 justify-content-center align-items-center my-5">
             <div className="col-10">
               <OwlCarousel
                 className="owl-theme"
