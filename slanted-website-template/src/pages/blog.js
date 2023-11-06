@@ -1,8 +1,8 @@
 // COMPONENTS
 import RightTriangleHero from "../components/RightTriangleHero";
+import SplitHero from "../components/SplitBoxHero/SplitBoxHero";
 import BlogPostCard from "../components/BlogPostCard";
 import BlogNavbar from "../components/BlogNavbar";
-import OwlCarousel from "react-owl-carousel";
 
 // IMAGES
 import heroImage from "../images/business-meeting-1.jpg";
@@ -33,27 +33,46 @@ const options = {
 function Blog() {
   return (
     <div>
-      <RightTriangleHero
+      {/* <RightTriangleHero
         image={heroImage}
         title="Blog"
         logo={logo}
         heading="Lorem ipsum dolor sit amet"
         description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+      /> */}
+      <SplitHero
+        logo={{
+          src: "/static/logo.svg",
+          alt: "a generic logo for a generic company"
+        }}
+        title="Split Template"
+        titleColor="text-white"
+        heading="Blog"
+        paragraph2="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore."
+        leftBgImg={{
+          src: '/static/pexels-kaique-rocha.jpg',
+          title: 'background image'
+        }}
+        rightBgColor="bg-primary"
+        reverse={false}
+        reverseContent={false}
       />
-      <div className="container-fluid d-flex justify-content-center align-items-center p-5">
+      <div className="container-fluid d-flex justify-content-center align-items-center p-lg-5">
         <div className="row d-flex w-100 justify-content-center align-items-center g-5">
           <div className="col-lg-7">
             <div className="text-center">
               <h1 className="m-3">
                 <b>
                   Lorem ipsum{" "}
-                  <span className="text-secondary">dolor sit amet</span>.
+                  <span className="text-info">dolor sit amet</span>.
                 </b>
               </h1>
             </div>
           </div>
-          <div className="d-flex w-100 justify-content-between bg-light-faded rounded-pill p-3">
-            <BlogNavbar />
+          <div className="d-flex w-100 justify-content-between bg-primary rounded-pill p-3">
+            <BlogNavbar
+              textColor="text-white"
+            />
             <input
               type="search"
               className="form-control rounded-pill w-30 border-0"

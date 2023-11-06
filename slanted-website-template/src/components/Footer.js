@@ -101,7 +101,7 @@ const Footer = ({
         </div >
 
       </div >
-      <div className={`row text-center`}>
+      <div className={`${bgColor ? bgColor : "bg-primary"} p-0 vw-100 row text-center`}>
         <p><b>©2021</b></p>
       </div>
     </div >

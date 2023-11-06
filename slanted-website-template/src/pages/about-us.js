@@ -1,5 +1,4 @@
 //COMPONENTS
-import RightTriangleHero from "../components/RightTriangleHero";
 import SplitHero from "../components/SplitBoxHero/SplitBoxHero";
 import SplitBanner from "../components/SplitBanner";
 import ImageBottomCard from "../components/ImageBottomCard.js";
@@ -16,16 +15,12 @@ import recommendIcon from "../images/icons/recommend-secondary.svg";
 //OTHER IMAGES
 import heroImage from "../images/AdobeStock_477547119.jpeg";
 import bannerImage from "../images/pexels-david-skyrius.jpg"
-import handshake from "../images/handshake.jpg";
 import bannerImage2 from "../images/AdobeStock_334979404.jpeg"
-import logo from "../logo.svg";
 
 function About() {
   return (
     <div>
       <SplitHero
-        image={'/static/pexels-kaique-rocha.jpg'}
-        //logo={<img src={logo} alt="a generic logo for a generic company" />}
         logo={{
           src: "/static/logo.svg",
           alt: "a generic logo for a generic company"
@@ -35,41 +30,14 @@ function About() {
         title="Mission Statement"
         subheading="A Great and Catchy Tagline Goes Here"
         paragraph2="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-        //paragraph2="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-        // /buttonLabel="Get Started"
         leftBgImg={{
           src: heroImage,
           title: 'background image'
         }}
         reverse={false}
       />
-      {/* <RightTriangleHero
-        image={heroImage}
-        title="About Us"
-        logo={logo}
-        heading="Mission Statement"
-        description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-      /> */}
       <div className="container-fluid d-flex flex-column p-0">
         {/***** VALUES SECTION *****/}
-        {/* <div
-          //className="row align-items-center justify-content-center"
-          data-aos="fade-down"
-          data-aos-delay="500"
-        > */}
-        {/* <div className="col-lg-7">
-            <div className="text-center">
-              <h1 className="m-5">
-                <b>Our Values</b>
-              </h1>
-            </div>
-            <p className="mb-5 text-center">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd.
-            </p>
-          </div> */}
         <div
           className="d-flex vh-100 p-0"
           data-aos="fade-down"

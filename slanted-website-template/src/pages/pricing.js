@@ -1,45 +1,12 @@
-import RightTriangleHero from "../components/RightTriangleHero";
 import SplitHero from "../components/SplitBoxHero/SplitBoxHero";
 import PricingCard from "../components/PricingCard";
-
-//IMAGES
-//import heroImage from "../images/business-meeting-1.jpg";
-import heroImage from "../images/AdobeStock_477547119.jpeg";
-import logo from "../logo.svg";
 
 function Pricing() {
   return (
     <div
       className="bg-primary"
     >
-      {/* <RightTriangleHero
-        image={heroImage}
-        title="Pricing"
-        logo={logo}
-        heading="Get Started With This Product"
-        description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-      /> */}
-      {/* <div
-        className="d-flex flex-column w-100 vh-20 justify-content-center p-2"
-        data-aos="fade-down"
-        data-aos-delay="500"
-      // style={{
-      //   backgroundImage: `url(${heroImage})`,
-      //   backgroundSize: "cover",
-      //   backgroundRepeat: "no-repeat",
-      //   backgroundAttachment: "fixed",
-      //   backgroundPosition: "center"
-      // }}
-      // title="hero image"
-      >
-        <h1
-          className="ms-3 ms-md-5 display-1 fw-bold text-white text-center">
-          <b>Pricing Plans</b>
-        </h1>
-      </div> */}
       <SplitHero
-        image={'/static/pexels-kaique-rocha.jpg'}
-        //logo={<img src={logo} alt="a generic logo for a generic company" />}
         logo={{
           src: "/static/logo.svg",
           alt: "a generic logo for a generic company"
@@ -47,8 +14,6 @@ function Pricing() {
         title="Split Template"
         titleColor="text-white"
         heading="Pricing Plans"
-        //subheading="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
-        //paragraph1="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
         paragraph2="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore."
         buttonLabel="Get Started"
         btnHref="#pricing"
