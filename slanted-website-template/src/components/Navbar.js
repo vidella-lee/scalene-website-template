@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
 
   return (
-    <nav class="site-navbar navbar navbar-expand-lg navbar-dark p-4" style={{ backgroundColor: "#222222" }}>
+    <nav class="z-5 position-relative site-navbar navbar navbar-expand-lg navbar-dark p-5 bg-dark">
       <div class="container-fluid">
         <Link class="navbar-brand" to="/">
           <svg class="nav-logo" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 117 117">
@@ -21,7 +21,7 @@ export default function Navbar() {
               </g>
             </g>
           </svg>
-          Business Name
+          Split Template
         </Link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
