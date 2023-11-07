@@ -150,4 +150,12 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 }
 
+@include media-breakpoint-up(md) {
+  .cta-banner-img {
+    clip-path: polygon(45% 0, 100% 0, 100% 100%, 0% 100%);
+    background: #293e40;
+  }
+
+}
+
 @import "bootstrap";

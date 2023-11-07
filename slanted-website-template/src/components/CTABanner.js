@@ -4,9 +4,9 @@ import React from 'react';
 
 const CTABanner = ({ image, title, description, buttonCTA }) => (
   <div className="container-fluid mb-5 mt-5 shadow-sm" data-aos="fade-down" data-aos-delay="500">
-    <div className="row">
+    <div className="d-flex flex-column-reverse flex-md-row">
 
-      <div className="col d-flex flex-column justify-content-start justify-content-md-center p-3 p-sm-5">
+      <div className="d-flex flex-column justify-content-start justify-content-md-center p-3 p-sm-5">
         <div
           className="row"
           style={{ display: `${title ? "inline" : "none"}` }}
@@ -34,19 +34,19 @@ const CTABanner = ({ image, title, description, buttonCTA }) => (
         </div>
       </div>
       <div
-        className="cta-banner-img w-100 vh-50 col p-0"
+        className="cta-banner-img w-100 min-vh-50 p-0 rounded-5"
         style={{
           backgroundImage: `url(${image})`,
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
-          backgroundPosition: "right"
+          //backgroundPosition: "right"
         }}
       >
       </div>
     </div>
 
-  </div>
+  </div >
 )
 
 export default CTABanner;

@@ -14,8 +14,8 @@ import recommendIcon from "../images/icons/recommend-secondary.svg";
 
 //OTHER IMAGES
 import heroImage from "../images/AdobeStock_477547119.jpeg";
-import bannerImage from "../images/pexels-david-skyrius.jpg"
-import bannerImage2 from "../images/AdobeStock_334979404.jpeg"
+import bannerImage from "../images/lady-working-1.jpeg"
+import ctaBannerImg from "../images/blue-tech-wave.jpeg"
 
 function About() {
   return (
@@ -125,7 +125,7 @@ function About() {
         </div>
         <div className="row">
           <CTABanner
-            image={bannerImage2}
+            image={ctaBannerImg}
             title="Want to know more? Get in touch."
             description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
             buttonCTA="Contact us"

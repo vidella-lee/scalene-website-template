@@ -20,8 +20,8 @@ import recommendIcon from "../images/icons/recommend-dark.svg";
 
 //OTHER IMAGES
 import heroImage from "../images/business-meeting-1.jpg";
-import handshake from "../images/handshake.jpg";
-
+// import handshake from "../images/handshake.jpg";
+import ctaBannerImg from "../images/blue-tech-wave.jpeg"
 import testimonialUsers from "../components/testimonialUsers";
 import { clientLogos } from "../components/clientLogos";
 
@@ -283,7 +283,7 @@ function Home() {
         {/***** END CLIENTS CAROUSEL *****/}
         <div className="row">
           <CTABanner
-            image={handshake}
+            image={ctaBannerImg}
             title="Ready to get started?"
             description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
             buttonCTA="Get Started"

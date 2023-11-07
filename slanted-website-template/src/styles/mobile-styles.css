@@ -30,6 +30,7 @@
     margin-right: 0px;
     margin-bottom: 25px;
   }
+
   .hero-left-content-mobile {
     height: 70vh;
   }
@@ -78,9 +79,9 @@
     font-size: 1em;
   }
 
-  .logo-box {
+  /* .logo-box {
     margin-top: ;
-  }
+  } */
 
   .hero-container {
     background: #5f716d;
