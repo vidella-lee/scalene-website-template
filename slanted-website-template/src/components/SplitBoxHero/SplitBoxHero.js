@@ -5,7 +5,7 @@ import React from "react";
 const MainContent = ({ heading, subheading, paragraph1, buttonLabel, btnHref }) => {
     return (
         <div
-            className="d-flex flex-column w-100 w-xl-50 w-xxl-60  vh-100 justify-content-center p-2"
+            className="d-flex flex-column w-100 w-xl-90 w-xxl-70 vh-100 justify-content-center p-2"
             data-aos="fade-down"
             data-aos-delay="500"
         >
