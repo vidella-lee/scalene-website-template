@@ -47,11 +47,8 @@ export default function Navbar() {
             <li class="nav-item">
               <Link class="nav-link" to="/blog" tabindex="-1">Blog</Link>
             </li>
-          </ul>
-
-          <ul class="navbar-nav ms-5">
             <li class="nav-item ">
-              <Link class="nav-link" to="login" tabindex="-1"><b>Login</b></Link>
+              <Link class="nav-link" to="/login" tabindex="-1"><b>Login</b></Link>
             </li>
           </ul>
         </div>
