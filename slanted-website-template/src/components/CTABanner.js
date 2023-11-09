@@ -39,7 +39,7 @@ const CTABanner = ({ image, title, description, buttonCTA }) => (
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
+          //backgroundAttachment: "fixed",
           //backgroundPosition: "right"
         }}
       >

@@ -101,7 +101,7 @@ const SplitHero = ({
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     backdropFilter: "blur(5px)",
-                    backgroundAttachment: "fixed",
+                    //backgroundAttachment: "fixed",
                     backgroundPosition: "center"
                 }}
                 title={leftBgImg.title}

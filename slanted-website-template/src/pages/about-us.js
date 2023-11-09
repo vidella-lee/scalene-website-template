@@ -15,7 +15,7 @@ import recommendIcon from "../images/icons/recommend-secondary.svg";
 //OTHER IMAGES
 import heroImage from "../images/AdobeStock_477547119.jpeg";
 import bannerImage from "../images/lady-working-1.jpeg"
-import ctaBannerImg from "../images/blue-tech-wave.jpeg"
+import ctaBannerImg from "../images/handshake.jpg"
 
 function About() {
   return (

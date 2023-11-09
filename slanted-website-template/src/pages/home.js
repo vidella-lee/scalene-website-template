@@ -21,7 +21,7 @@ import recommendIcon from "../images/icons/recommend-dark.svg";
 //OTHER IMAGES
 import heroImage from "../images/business-meeting-1.jpg";
 // import handshake from "../images/handshake.jpg";
-import ctaBannerImg from "../images/blue-tech-wave.jpeg"
+import ctaBannerImg from "../images/lady-working-2.jpeg";
 import testimonialUsers from "../components/testimonialUsers";
 import { clientLogos } from "../components/clientLogos";
 
