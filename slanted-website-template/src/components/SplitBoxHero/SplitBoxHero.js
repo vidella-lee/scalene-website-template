@@ -95,7 +95,7 @@ const SplitHero = ({
     return (
         <div className={`position-relative d-flex  ${reverse ? "flex-column-reverse flex-lg-row-reverse" : "flex-column flex-lg-row"} justify-content-between min-vh-100 vh-lg-100 w-100`}>
             <div
-                className={`${leftBgColor ? leftBgColor : "bg-dark"} ${leftTextColor ? leftTextColor : "text-white"} z-0 position-relative d-flex flex-column w-100 h-100 justify-content-center align-items-center shadow-lg`}
+                className={`${leftBgColor ? leftBgColor : "bg-dark"} ${leftTextColor ? leftTextColor : "text-white"} split-hero-bg z-0 position-relative d-flex flex-column w-100 h-100 justify-content-center align-items-center shadow-lg`}
                 style={{
                     backgroundImage: `url(${leftBgImg.src})`,
                     backgroundSize: "cover",

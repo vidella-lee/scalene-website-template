@@ -6,15 +6,15 @@ const SplitBanner = ({ image, title, paragraph, paragraphColor, bgColor, titleCo
     >
     <div
       className={`${bgColor ? bgColor : ""} split-banner-bg w-100 h-100 w-md-50 p-0`}
-      // style={{
-      //   background: `url(${image})`,
-      //   backgroundSize: "cover",
-      //   backgroundRepeat: "no-repeat",
-      //   backgroundAttachment: "fixed",
-      //   backgroundPosition: "center"
-      // }}
+      style={{
+        background: `url(${image})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        // backgroundAttachment: "fixed",
+        backgroundPosition: "center"
+      }}
     >
-      <img className="w-100 object-fit-cover h-100" src={image} alt="demo" />
+      {/* <img className="w-100 object-fit-cover h-100" src={image} alt="demo" /> */}
     </div>
     <div className={`${bgColor ? bgColor : ""} split-banner-content w-md-50 text-center text-sm-end d-flex flex-column justify-content-start justify-content-md-center p-4 p-sm-5`}>
       <div
