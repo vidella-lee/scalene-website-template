@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
 
   return (
-    <nav class="z-5 position-relative site-navbar navbar navbar-expand-lg navbar-dark p-5 bg-dark">
+    <nav class="z-5 position-relative site-navbar navbar navbar-expand-lg navbar-dark p-3 p-md-5 bg-dark">
       <div class="container-fluid">
         <Link class="navbar-brand" to="/">
           <svg class="nav-logo" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 117 117">
