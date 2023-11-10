@@ -395,6 +395,10 @@ input::placeholder {
 
 }
 
+.text-shadow {
+  text-shadow: 3px 3px 15px black;
+}
+
 #login-card {
   width: 70% !important;
 }

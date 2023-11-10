@@ -11,17 +11,17 @@ const MainContent = ({ heading, subheading, paragraph1, buttonLabel, btnHref }) 
         >
             <h1
                 style={{ display: `${heading ? "inline" : "none"}` }}
-                className="ms-3 ms-md-5 display-1 fw-bold">
+                className="text-shadow ms-3 ms-md-5 display-1 fw-bold">
                 <b>{heading}</b>
             </h1>
             <h2
                 style={{ display: `${subheading ? "inline" : "none"}` }}
-                className={` ms-3 ms-md-5`}>
+                className={`text-shadow ms-3 ms-md-5`}>
                 {subheading}
             </h2>
             <p
                 style={{ display: `${paragraph1 ? "block" : "none"}` }}
-                className={` ms-3 ms-md-5`}
+                className={`text-shadow ms-3 ms-md-5`}
             >
                 {paragraph1}
             </p>
