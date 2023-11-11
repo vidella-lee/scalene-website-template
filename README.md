@@ -7,6 +7,8 @@
 
 ![Alt text](image.png)
 
+- Preview available here: https://split-website-template.netlify.app/
+
 ## Components
 
 ### `Hero`
