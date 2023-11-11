@@ -1,4 +1,4 @@
-import SplitHero from "../components/SplitBoxHero/SplitBoxHero";
+import Hero from "../components/Hero/Hero";
 import PricingCard from "../components/PricingCard";
 
 function Pricing() {
@@ -6,15 +6,15 @@ function Pricing() {
     <div
       className="bg-primary"
     >
-      <SplitHero
+      <Hero
         logo={{
           src: "/static/logo.svg",
           alt: "a generic logo for a generic company"
         }}
-        title="Split Template"
-        titleColor="text-white"
+        rightHeading="Split Template"
+        rightHeadingColor="text-white"
         heading="Pricing Plans"
-        paragraph2="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore."
+        rightParagraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore."
         buttonLabel="Get Started"
         btnHref="#pricing"
         leftBgImg={{

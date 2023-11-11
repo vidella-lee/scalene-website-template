@@ -1,8 +1,6 @@
 import React from "react";
-// import styles from "./SplitHero.module.scss"
 
-
-const MainContent = ({ heading, subheading, paragraph1, buttonLabel, btnHref }) => {
+const MainContent = ({ heading, subheading, leftParagraph, buttonLabel, btnHref }) => {
     return (
         <div
             className="d-flex flex-column w-100 w-xl-90 w-xxl-70 vh-100 justify-content-center p-2"
@@ -20,10 +18,10 @@ const MainContent = ({ heading, subheading, paragraph1, buttonLabel, btnHref }) 
                 {subheading}
             </h2>
             <p
-                style={{ display: `${paragraph1 ? "block" : "none"}` }}
+                style={{ display: `${leftParagraph ? "block" : "none"}` }}
                 className={`text-shadow ms-3 ms-md-5`}
             >
-                {paragraph1}
+                {leftParagraph}
             </p>
             <a
                 style={{ display: `${buttonLabel ? "inline" : "none"}` }}
@@ -39,7 +37,7 @@ const MainContent = ({ heading, subheading, paragraph1, buttonLabel, btnHref }) 
     )
 }
 
-const SubContent = ({ logo, title, titleColor, paragraph2 }) => {
+const SubContent = ({ logo, rightHeading, rightHeadingColor, rightParagraph }) => {
     return (
         <div className="d-flex flex-column align-items-center justify-content-center h-100">
 
@@ -51,10 +49,10 @@ const SubContent = ({ logo, title, titleColor, paragraph2 }) => {
                 <img className="w-100" src={logo.src} alt={logo.alt} />
             </div>
             <div
-                className={`text-center w-60 pe-2 pe-sm-0 ${titleColor ? titleColor : ""}`}
-                style={{ display: `${title ? "inline" : "none"}` }}
+                className={`text-center w-60 pe-2 pe-sm-0 ${rightHeadingColor ? rightHeadingColor : ""}`}
+                style={{ display: `${rightHeading ? "inline" : "none"}` }}
             >
-                <h1 className=" me-md-4 " data-aos="fade-down" data-aos-delay="500">{title}</h1>
+                <h1 className=" me-md-4 " data-aos="fade-down" data-aos-delay="500">{rightHeading}</h1>
 
             </div>
             <div
@@ -62,10 +60,10 @@ const SubContent = ({ logo, title, titleColor, paragraph2 }) => {
                 data-aos-delay="300"
             >
                 <p
-                    style={{ display: `${paragraph2 ? "block" : "none"}` }}
+                    style={{ display: `${rightParagraph ? "block" : "none"}` }}
                     className={`ms-3 ms-md-5 display-4 display-heading-xl`}
                 >
-                    {paragraph2}
+                    {rightParagraph}
                 </p>
             </div>
         </div>
@@ -73,13 +71,13 @@ const SubContent = ({ logo, title, titleColor, paragraph2 }) => {
 
 }
 
-const SplitHero = ({
-    title,
-    titleColor,
+const Hero = ({
+    rightHeading,
+    rightHeadingColor,
     heading,
     subheading,
-    paragraph1,
-    paragraph2,
+    leftParagraph,
+    rightParagraph,
     logo,
     buttonLabel,
     btnHref,
@@ -110,15 +108,15 @@ const SplitHero = ({
                     <MainContent
                         heading={heading}
                         subheading={subheading}
-                        paragraph1={paragraph1}
+                        leftParagraph={leftParagraph}
                         buttonLabel={buttonLabel}
                         btnHref={btnHref}
                     /> :
                     <SubContent
                         logo={logo}
-                        title={title}
-                        titleColor={titleColor}
-                        paragraph2={paragraph2}
+                        rightHeading={rightHeading}
+                        rightHeadingColor={rightHeadingColor}
+                        rightParagraph={rightParagraph}
                     />
                 }
             </div>
@@ -135,14 +133,14 @@ const SplitHero = ({
                 {!reverseContent ?
                     <SubContent
                         logo={logo}
-                        title={title}
-                        titleColor={titleColor}
-                        paragraph2={paragraph2}
+                        rightHeading={rightHeading}
+                        rightHeadingColor={rightHeadingColor}
+                        rightParagraph={rightParagraph}
                     /> :
                     <MainContent
                         heading={heading}
                         subheading={subheading}
-                        paragraph1={paragraph1}
+                        leftParagraph={leftParagraph}
                         buttonLabel={buttonLabel}
                     />
                 }
@@ -152,4 +150,4 @@ const SplitHero = ({
 
     );
 }
-export default SplitHero;
+export default Hero;

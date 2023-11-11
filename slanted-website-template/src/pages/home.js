@@ -1,5 +1,5 @@
 //COMPONENTS
-import SplitHero from "../components/SplitBoxHero/SplitBoxHero";
+import Hero from "../components/Hero/Hero";
 import LargeFeatureCard from "../components/LargeFeatureCard";
 import SmallFeatureCard from "../components/SmallFeatureCard";
 import StatsFeatureCard from "../components/StatsFeatureCard";
@@ -47,18 +47,17 @@ const options = {
 function Home() {
   return (
     <div className="w-100 justify-content-center bg-white">
-      <SplitHero
-        image={'/static/pexels-kaique-rocha.jpg'}
+      <Hero
         logo={{
           src: "/static/logo.svg",
           alt: "a generic logo for a generic company"
         }}
-        title="Split Template"
-        titleColor="text-white"
+        rightHeading="Split Template"
+        rightHeadingColor="text-white"
         heading="An H1 Title for a Home Page"
         subheading="A Great and Catchy Tagline Goes Here"
-        paragraph1="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-        paragraph2="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        leftParagraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        rightParagraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
         buttonLabel="Get Started"
         leftBgImg={{
           src: '/static/pexels-kaique-rocha.jpg',

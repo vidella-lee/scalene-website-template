@@ -1,5 +1,5 @@
 //COMPONENTS
-import SplitHero from "../components/SplitBoxHero/SplitBoxHero";
+import Hero from "../components/Hero/Hero.js";
 import SplitBanner from "../components/SplitBanner";
 import ImageBottomCard from "../components/ImageBottomCard.js";
 import TeamMemberCard from "../components/TeamMemberCard";
@@ -20,16 +20,16 @@ import ctaBannerImg from "../images/handshake.jpg"
 function About() {
   return (
     <div>
-      <SplitHero
+      <Hero
         logo={{
           src: "/static/logo.svg",
           alt: "a generic logo for a generic company"
         }}
         heading="About Us"
-        titleColor="text-white"
-        title="Mission Statement"
+        rightHeadingColor="text-white"
+        rightHeading="Mission Statement"
         subheading="A Great and Catchy Tagline Goes Here"
-        paragraph2="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        rightParagraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
         leftBgImg={{
           src: heroImage,
           title: 'background image'

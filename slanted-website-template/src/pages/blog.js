@@ -1,6 +1,6 @@
 // COMPONENTS
 import RightTriangleHero from "../components/RightTriangleHero";
-import SplitHero from "../components/SplitBoxHero/SplitBoxHero";
+import Hero from "../components/Hero/Hero";
 import BlogPostCard from "../components/BlogPostCard";
 import BlogNavbar from "../components/BlogNavbar";
 
@@ -40,15 +40,15 @@ function Blog() {
         heading="Lorem ipsum dolor sit amet"
         description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
       /> */}
-      <SplitHero
+      <Hero
         logo={{
           src: "/static/logo.svg",
           alt: "a generic logo for a generic company"
         }}
-        title="Split Template"
-        titleColor="text-white"
+        rightHeading="Split Template"
+        rightHeadingColor="text-white"
         heading="Blog"
-        paragraph2="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore."
+        rightParagraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore."
         leftBgImg={{
           src: '/static/pexels-kaique-rocha.jpg',
           title: 'background image'
