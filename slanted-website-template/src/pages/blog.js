@@ -1,57 +1,28 @@
 // COMPONENTS
-import RightTriangleHero from "../components/RightTriangleHero";
 import Hero from "../components/Hero/Hero";
 import BlogPostCard from "../components/BlogPostCard";
 import BlogNavbar from "../components/BlogNavbar";
 
 // IMAGES
-import heroImage from "../images/business-meeting-1.jpg";
 import post1 from "../images/blog-post-1.jpg";
 import post2 from "../images/blog-post-2.jpg";
 import post3 from "../images/blog-post-3.jpg";
-import logo from "../logo.svg";
-
-const options = {
-  //dots: true,
-  //autoHeight: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 2,
-    },
-    1500: {
-      items: 3,
-    },
-  },
-};
 
 function Blog() {
   return (
     <div>
-      {/* <RightTriangleHero
-        image={heroImage}
-        title="Blog"
-        logo={logo}
-        heading="Lorem ipsum dolor sit amet"
-        description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-      /> */}
       <Hero
         logo={{
           src: "/static/logo.svg",
-          alt: "a generic logo for a generic company"
+          alt: "a generic logo for a generic company",
         }}
         rightHeading="Split Template"
         rightHeadingColor="text-white"
         heading="Blog"
         rightParagraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore."
         leftBgImg={{
-          src: '/static/pexels-kaique-rocha.jpg',
-          title: 'background image'
+          src: "/static/pexels-kaique-rocha.jpg",
+          title: "background image",
         }}
         rightBgColor="bg-primary"
         reverse={false}
@@ -63,31 +34,19 @@ function Blog() {
             <div className="text-center">
               <h1 className="m-3">
                 <b>
-                  Lorem ipsum{" "}
-                  <span className="text-info">dolor sit amet</span>.
+                  Lorem ipsum <span className="text-info">dolor sit amet</span>.
                 </b>
               </h1>
             </div>
           </div>
-          <div className="d-flex w-100 justify-content-between bg-primary rounded-pill p-3">
-            <BlogNavbar
-              textColor="text-white"
-            />
-            <input
-              type="search"
-              className="form-control rounded-pill w-30 border-0"
-              id="search-control"
-              placeholder="Search"
-            ></input>
-          </div>
-
+          <BlogNavbar textColor="text-white" />
           <div className="d-flex col-lg-4 justify-content-center align-items-center">
             <BlogPostCard
               image={post1}
               title="Blog Post Title 1"
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
               tags={["tag 1", "tag 2", "tag 3", "tag 4", "tag 5"]}
-              href="#"
+              href="/blog"
             />
           </div>
           <div className="d-flex col-lg-4 justify-content-center align-items-center">
@@ -96,7 +55,7 @@ function Blog() {
               title="Blog Post Title 2"
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
               tags={["tag 1", "tag 2", "tag 3"]}
-              href="#"
+              href="/blog"
             />
           </div>
           <div className="d-flex col-lg-4 justify-content-center align-items-center">
@@ -105,7 +64,7 @@ function Blog() {
               title="Blog Post Title 3: The Bloggers Returns"
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
               tags={["tag 1", "tag 2", "tag 3", "tag 4"]}
-              href="#"
+              href="/blog"
             />
           </div>
         </div>
@@ -118,7 +77,7 @@ function Blog() {
               title="Blog Post Title 4: A Blog of Two Cities"
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
               tags={["tag 1", "tag 2", "tag 3", "tag 4", "tag 5"]}
-              href="#"
+              href="/blog"
             />
           </div>
           <div className="d-flex col-lg-4 justify-content-center align-items-center">
@@ -126,7 +85,7 @@ function Blog() {
               image={post2}
               title="Blog Post Title 2"
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-              href="#"
+              href="/blog"
               tags={["tag 1", "tag 2", "tag 3"]}
             />
           </div>
@@ -135,7 +94,7 @@ function Blog() {
               image={post3}
               title="Blog Post Title 6"
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-              href="#"
+              href="/blog"
               tags={["tag 1", "tag 2", "tag 3"]}
             />
           </div>
@@ -145,27 +104,27 @@ function Blog() {
       <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
           <li class="page-item">
-            <a class="page-link" href="#">
+            <a class="page-link" href="/blog">
               {"<<"}
             </a>
           </li>
           <li class="page-item">
-            <a class="page-link" href="#">
+            <a class="page-link" href="/blog">
               1
             </a>
           </li>
           <li class="page-item">
-            <a class="page-link" href="#">
+            <a class="page-link" href="/blog">
               2
             </a>
           </li>
           <li class="page-item">
-            <a class="page-link" href="#">
+            <a class="page-link" href="/blog">
               3
             </a>
           </li>
           <li class="page-item">
-            <a class="page-link" href="#">
+            <a class="page-link" href="/blog">
               {">>"}
             </a>
           </li>
