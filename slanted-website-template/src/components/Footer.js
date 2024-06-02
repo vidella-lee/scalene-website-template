@@ -48,8 +48,8 @@ const Footer = ({ bgColor, textColor, linkColor }) => {
               </a>
             </li>
             <li>
-              <a className="link-light text-decoration-none" href="/">
-                Support
+              <a className="link-light text-decoration-none" href="/login">
+                Login
               </a>
             </li>
           </ul>
