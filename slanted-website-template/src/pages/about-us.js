@@ -118,6 +118,7 @@ function About() {
                   name={teamMember.name}
                   title={teamMember.title}
                   href={teamMember.href}
+                  alt="team member"
                 />
               </div>
             ))}

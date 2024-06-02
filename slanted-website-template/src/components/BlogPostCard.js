@@ -35,7 +35,10 @@ const BlogPostCard = ({
             <div className="d-flex ms-2 mt-2">
               {tags.map((tag) => (
                 <div className="rounded-pill bg-light pt-1 pb-1 ps-2 pe-2 ms-2 blog-tag">
-                  <a className=" text-decoration-none blog-tag-link" href="#">
+                  <a
+                    className=" text-decoration-none blog-tag-link"
+                    href="/blog"
+                  >
                     {tag}
                   </a>
                 </div>

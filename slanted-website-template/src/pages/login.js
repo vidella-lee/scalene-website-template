@@ -1,8 +1,4 @@
-//COMPONENTS
 import LoginCard from "../components/LoginCard";
-
-import meeting from "../images/business-meeting-1.jpg";
-import city from "../images/pexels-david-skyrius.jpg";
 import logo from "../logo.svg";
 
 function Login() {

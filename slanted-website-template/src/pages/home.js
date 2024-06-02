@@ -20,14 +20,11 @@ import recommendIcon from "../images/icons/recommend-dark.svg";
 
 //OTHER IMAGES
 import heroImage from "../images/business-meeting-1.jpg";
-// import handshake from "../images/handshake.jpg";
 import ctaBannerImg from "../images/lady-working-2.jpeg";
 import testimonialUsers from "../components/testimonialUsers";
 import { clientLogos } from "../components/clientLogos";
 
 const options = {
-  //dots: true,
-  //autoHeight: true,
   responsive: {
     0: {
       items: 1,
@@ -95,9 +92,8 @@ function Home() {
               <LargeFeatureCard
                 image={visibilityIcon}
                 title="A Key Aspect"
-                //bgColor="bg-info"
-                //textColor="text-white"
                 description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                alt="eye-icon"
               />
             </div>
             <div className="d-flex col-lg-4 justify-content-center align-items-center">
@@ -106,6 +102,7 @@ function Home() {
                 title="A Key Aspect"
                 description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
                 addDelay={50}
+                alt="bookmark icon"
               />
             </div>
             <div className="d-flex col-lg-4 justify-content-center align-items-center">
@@ -114,6 +111,7 @@ function Home() {
                 title="A Key Aspect"
                 description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
                 addDelay={300}
+                alt="dashboard icon"
               />
             </div>
           </div>
@@ -261,6 +259,7 @@ function Home() {
                       quote={testimonial.quote}
                       name={testimonial.name}
                       image={testimonial.img}
+                      alt={testimonial.name}
                     />
                   </div>
                 ))}
@@ -272,9 +271,6 @@ function Home() {
 
         {/***** CLIENTS CAROUSEL *****/}
         <div className="container-fluid bg-white mb-5 mt-5">
-          {/* <div className="row text-center p-3">
-            <h3>Clients</h3>
-          </div> */}
           <div className="row">
             <ClientsCarousel clients={clientLogos} />
           </div>

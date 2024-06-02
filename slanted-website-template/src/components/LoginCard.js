@@ -46,7 +46,7 @@ const LoginCard = () => (
       </div>
       <p>
         <small>
-          Don't have an account yet? <a href="#">Register here.</a>
+          Don't have an account yet? <a href="/">Register here.</a>
         </small>
       </p>
     </div>
