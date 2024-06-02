@@ -51,7 +51,7 @@ const SubContent = ({
   rightParagraph,
 }) => {
   return (
-    <div className="d-flex flex-column align-items-center justify-content-center h-100">
+    <div className="d-flex flex-column align-items-center justify-content-center h-100 p-5">
       <div
         style={{ display: `${logo ? "inline" : "none"}` }}
         className="mb-4 mt-3 me-2 d-none d-sm-inline"
