@@ -5,7 +5,7 @@
 - Uses React `^17.0.2`
 - Uses Bootstrap `5.3.0-alpha3`
 
-![Alt text](image.png)
+![image](https://github.com/vidella-lee/split-website-template/assets/25461721/18631121-2b02-42ed-88ce-664227a73214)
 
 - Preview available here: https://split-website-template.netlify.app/
 
